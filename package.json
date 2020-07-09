@@ -1,0 +1,32 @@
+{
+  "name": "zil.sh",
+  "version": "0.3.0",
+  "description": "connecting web2 to web3",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "ipfs": "^0.47.0"
+  },
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gist.github.com/leon-do/aa26701007c1e8b9a39c1d91e27907be#file-zil-sh-md"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
