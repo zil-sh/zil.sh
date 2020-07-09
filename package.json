@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@unstoppabledomains/resolution": "^1.5.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "got": "^11.3.0",

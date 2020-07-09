@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const { Resolution } = require("@unstoppabledomains/resolution");
+var favicon = require('serve-favicon')
 const PORT = process.env.PORT || 5000;
 
 const resolution = new Resolution({
@@ -9,6 +10,8 @@ const resolution = new Resolution({
     cns: { url: "https://mainnet.infura.io/v3" },
   },
 });
+
+app.use(favicon(__dirname + "/public/favicon.ico"))
 
 // listen
 app.get("*", async (req, res) => {
@@ -24,5 +27,6 @@ app.get("*", async (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
   }
 });
+
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
