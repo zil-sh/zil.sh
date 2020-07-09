@@ -13,10 +13,10 @@ const resolution = new Resolution({
 // listen
 app.get("*", async (req, res) => {
   // parse
-	const subdomain = req.subdomains.reverse().join(".").concat('.zil')
+  const subdomain = req.subdomains.reverse().join(".").concat(".zil");
   try {
     // resolve dns
-		const cid = await resolution.ipfsHash(subdomain);
+    const cid = await resolution.ipfsHash(subdomain);
     // redirect
     return res.redirect(`http://gateway.ipfs.io/ipfs/${cid}`);
   } catch (error) {
